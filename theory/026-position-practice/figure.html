@@ -4,22 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Прямоугольник и круг</title>
 
     <style>
-        .circle {
-            width: 100px;
+        body {
+            background: linear-gradient(to right, #00ffbf, #00aeff);
+        }
+
+        .rectangle {
+            width: 200px;
             height: 100px;
-            background-color: blue;
+            background: linear-gradient(to bottom, #ffffff, #000000);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            transition: all 1s;
+        }
+
+        .rectangle:hover {
+            background: linear-gradient(to bottom, #000000, #ffffff);
+        }
+
+        .circle {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(to bottom, #ff0000, #ff9900);
             border-radius: 50%;
+            position: fixed;
+            top: 10px;
+            left: 60px;
+            transition: all 1s;
+        }
+
+        .circle:hover {
+            background: linear-gradient(to bottom, #ff9900, #ff0000);
+            transform: scale(125%);
         }
     </style>
 </head>
 
 <body>
-
-    <div class="circle"></div>
-
+    <div class="rectangle">
+        <div class="circle"></div>
+    </div>
 </body>
 
 </html>
