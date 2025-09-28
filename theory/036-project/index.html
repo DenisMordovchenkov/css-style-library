@@ -2,120 +2,69 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мое портфолио</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            box-sizing: border-box;
-            text-align: center;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        h1 {
-            color: #2e86c1;
-            margin-bottom: 20px;
-        }
-
-        p.subtitle {
-            font-size: 1.2em;
-            color: #555;
-        }
-
-        .card {
-            width: 45%;
-            margin: 10px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            box-sizing: border-box;
-            background-color: #fff;
-            border-radius: 8px;
-            float: left;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-        }
-
-        /* .card img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        } */
-
-        .card {
-            width: calc(50% - 20px);
-            /* Вычисляемая ширина с учетом отступов */
-            margin: 10px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            box-sizing: border-box;
-            background-color: #fff;
-            border-radius: 8px;
-            float: left;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        /* @media (max-width: 768px) {
-            .card {
-                width: 100%;
-                clear: both;
-            }
-        } */
-
-        @media (max-width: 768px) {
-            .card {
-                width: calc(100% - 20px);
-                /* Вычисляемая ширина на мобильных устройствах */
-                clear: both;
-                /* Очистка float на мобильных устройствах */
-            }
-        }
-
-        .project-description {
-            color: #777;
-            font-size: 0.9em;
-            margin-top: 10px;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Archer, Sterling Melory Archer</title>
 </head>
 
 <body>
+    <video autoplay muted loop class="bg_video">
+        <source src="img/Archer - Phrasing Compilation.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="header">
+            <h1>Добро пожаловать на минилендинг посвящённый одному из самых
+                уморительных сериалов современности</h1>
+        </div>
+        <div>
+            <img class="img_header" src="img/5.webp" alt="archer_vice_logo">
+        </div>
+        <div>
+            <p class="main_description">
+                🦇🦸‍♂️ «Арчер» — это тот самый сериал, где шпионские
+                миссии идут рука об руку с бесконечными семейными разборками, словно в ЦРУ работает не
+                разведка, а филиал «Семейного психолога»!
+            </p>
+        </div>
+        <div><img src="img/1.jpg" alt="archer_elevator"></div>
 
-    <h1>Добро пожаловать к котикам!</h1>
-    <p class="subtitle">Некоторые из моих последних фотографий</p>
 
-    <div class="card">
-        <img src="https://placekitten.com/333/200" alt="Проект 1">
-        <p>Котик 1</p>
-        <p class="project-description">Котейка 1. Здесь может быть краткое описание.</p>
+        <div>
+            <p>
+                Представьте себе: международные заговоры, секретные операции и... бесконечные споры о том, кто
+                последний раз оставил микроволновку открытой. Да-да, в этом шпионском дурдоме даже у секретных
+                агентов есть свои скелеты в шкафу — и они явно не прячут их в сейфах! Здесь каждый второй — мастер
+                сарказма, а каждый первый — виртуозно путает секретные документы с рецептами бабушкиных пирожков. В
+                мире Арчера даже ядерный апокалипсис — не повод прервать совещание по поводу того, кто будет
+                оплачивать счета за электричество!
+            </p>
+        </div>
+        <div>
+            <img src="img/2.jpg" alt="">
+            <img src="img/7.webp" alt="">
+        </div>
+        <div>
+            <p> Шпионы, интриги, расследования... и всё это приправленное острым
+                соусом абсурда и щедро политое соусом чёрного юмора. Идеальный сериал для тех, кто любит, когда
+                шпионы шутят не хуже стендаперов, а секретные базы больше напоминают сумасшедший дом с видом на
+                Кремль. P.S.: Если вы ещё не смотрели «Арчер», знайте — вы пропустили самое нелепое и уморительное
+                шпионское приключение в истории телевидения!
+            </p>
+        </div>
+        <div><img src="img/3.webp" alt=""></div>
     </div>
-
-    <div class="card">
-        <img src="https://placekitten.com/302/200" alt="Котик 2">
-        <p>Котик 2</p>
-        <p class="project-description">Котейка 2. Здесь может быть краткое описание.</p>
+    <div class="footer">
+        <img src="img/8.jpg" alt="">
+        <img src="img/9.jpg" alt="">
+        <img src="img/10.jpg" alt="">
+        <img src="img/6.webp" alt="">
+        <img src="img/4.jpg" alt="">
+        <img src="img/5.webp" alt="">
     </div>
-
-    <div class="card">
-        <img src="https://placekitten.com/303/200" alt="Котик 3">
-        <p>Котик 3</p>
-        <p class="project-description">Котейка 3. Здесь может быть краткое описание.</p>
     </div>
-
-    <div class="card">
-        <img src="https://placekitten.com/305/200" alt="Котик 4">
-        <p>Котик 4</p>
-        <p class="project-description">Котейка 4. Здесь может быть краткое описание.</p>
-    </div>
-
-    <div style="clear: both;"></div> <!-- Очистка float для избежания проблем с высотой -->
+    <div />
 
 </body>
 
