@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
 
+
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,39 +25,110 @@ body {
     z-index: -999;
 }
 
+
+
 img {
-    max-width: 700px;
+    display: flex;
+    width: 500px;
+    border: double 2px cyan;
+    align-self: center;
 }
 
-h1 {
-    font-size: 80px;
+.header {
+    position: relative;
+    font-size: 30px;
+    animation: my_animation_left 1.5s;
+    animation-fill-mode: both;
+    height: 100%;
 }
+
+.right {
+    position: relative;
+    font-size: 60px;
+    animation: my_animation_right 5s;
+    animation-fill-mode: both;
+    height: 100%;
+}
+
+@keyframes my_animation_left {
+    from {
+        left: -300px;
+        opacity: 0;
+        color: #00fff2;
+        color: #0084ff;
+    }
+
+
+    to {
+        left: 0;
+        opacity: 1;
+        color: #2600ff;
+        color: #8b00fd;
+    }
+}
+
+@keyframes my_animation_right {
+    from {
+        right: -500px;
+        opacity: 0;
+        color: #00fff2;
+        color: #0084ff;
+    }
+
+
+    to {
+        right: 0;
+        opacity: 1;
+        color: #2600ff;
+        color: #8b00fd;
+    }
+}
+
 
 .img_header {
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    width: 400px;
 }
 
 p {
     font-size: 30px;
-    padding-top: 20px 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
-    color: rgb(255, 255, 255);
+    color: rgb(119, 0, 255);
 }
-
-
-
-
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 50px;
     border: solid 2px black;
 }
 
 .main {
     display: flex;
-    align-items: first center;
+    flex-wrap: wrap;
+    flex-direction: row;
     padding: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+@media (max-width: 1280px) {
+    .img_header {
+        display: none;
+    }
+
+    .first_p {
+        padding-top: 400px;
+    }
+
+
 }
