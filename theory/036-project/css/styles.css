@@ -17,6 +17,11 @@ body {
     background: linear-gradient(to bottom, #00fffb, #ec02fd);
 }
 
+h1 {
+    text-shadow: 5px 5px 8px #000000;
+
+}
+
 .bg_video {
     position: fixed;
     top: 0;
@@ -45,7 +50,7 @@ img {
 .right {
     position: relative;
     font-size: 60px;
-    animation: my_animation_right 5s;
+    animation: my_animation_right 2s ease-out;
     animation-fill-mode: both;
     height: 100%;
 }
@@ -69,7 +74,7 @@ img {
 
 @keyframes my_animation_right {
     from {
-        right: -500px;
+        right: -3000px;
         opacity: 0;
         color: #00fff2;
         color: #0084ff;
@@ -96,6 +101,7 @@ p {
     padding-bottom: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
+    text-shadow: 1px 1px 2px #000000;
     color: rgb(119, 0, 255);
 }
 
@@ -122,10 +128,6 @@ p {
 }
 
 @media (max-width: 1280px) {
-    .img_header {
-        display: none;
-    }
-
     .first_p {
         padding-top: 400px;
     }
