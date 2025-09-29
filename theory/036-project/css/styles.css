@@ -110,7 +110,6 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 50px;
-    border: solid 2px black;
 }
 
 .main {
