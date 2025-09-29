@@ -21,8 +21,7 @@ img {
 }
 
 h1 {
-    display: block;
-    height: 200px;
+    font-size: 80px;
 }
 
 .img_header {
@@ -34,21 +33,22 @@ p {
     padding-top: 20px 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
 }
+
 
 
 
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
     padding: 50px;
+    border: solid 2px black;
 }
 
-.footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+.main {
+    display: flex;
+    align-items: first center;
+    padding: 20px;
 }
