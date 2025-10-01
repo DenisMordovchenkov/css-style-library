@@ -6,68 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+    <link rel="stylesheet" href="styles.css">
     <title>Подписка на закрытый канал</title>
 
     <!-- 😉 Помните, что ваше решение такое же хорошее, как и моё, до тех пор, пока оно вам нравится -->
 
-    <!-- Стили для элементов страницы -->
-    <style>
-        body {
-            /* Используется шрифт Montserrat для текста внутри body */
-            font-family: 'Montserrat', sans-serif;
-        }
 
-        .card {
-            /* Цвет фона карточки */
-            background-color: #fff;
-        }
-
-        .card h2 {
-            /* Внутренний отступ для заголовка h2 */
-            margin: 5px;
-        }
-
-
-        .price {
-            /* Размер шрифта цены */
-            font-size: 20px;
-            /* Жирное начертание для цены */
-            font-weight: bold;
-        }
-
-
-        .button {
-            /* Цвет фона кнопки */
-            /* background-color: #4CAF50; */
-        }
-
-        .button:hover {
-            /* Изменение цвета фона кнопки при наведении */
-            background-color: #37873b;
-        }
-
-        ul {
-            /* Удаление маркеров списка */
-            list-style: none;
-        }
-
-        li {
-            /* Внешний отступ элементов списка */
-            margin: 5px 0;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                /* Изменение направления отображения элементов при ширине экрана до 768px */
-                flex-direction: column;
-                /* Выравнивание элементов по центру при изменении направления */
-                align-items: center;
-            }
-        }
-    </style>
 </head>
 
-<body>
+<body class="container">
 
     <div class="card">
         <h2>Базовая подписка</h2>

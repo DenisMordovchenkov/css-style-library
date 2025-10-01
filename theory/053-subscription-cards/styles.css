@@ -1,0 +1,104 @@
+body {
+    /* Используется шрифт Montserrat для текста внутри body */
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-shrink: 1;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100vh;
+    gap: 10px;
+}
+
+.card {
+    /* Цвет фона карточки */
+    padding: 10px;
+    display: flex;
+    background-color: #00b7ff;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(0, 208, 255);
+    width: 250px;
+    min-height: 300px;
+    border-radius: 20px;
+    background-color: #00b7ff;
+    box-shadow: 2px 2px 10px #0285ff;
+    transition: transform 1s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card h2 {
+    /* Внутренний отступ для заголовка h2 */
+    margin: 5px;
+}
+
+.card:nth-child(2) {
+    min-height: 350px;
+}
+
+.card:nth-child(3) {
+    min-height: 400px;
+}
+
+.ul_container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.price {
+    /* Размер шрифта цены */
+    font-size: 20px;
+    /* Жирное начертание для цены */
+    font-weight: bold;
+    padding-bottom: 10px;
+    align-self: center;
+}
+
+
+.button {
+    /* Цвет фона кнопки */
+    background-color: #01b110;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.button:hover {
+    /* Изменение цвета фона кнопки при наведении */
+    background-color: #00ff0d;
+    transform: scale(1.05);
+}
+
+ul {
+    /* Удаление маркеров списка */
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        /* Изменение направления отображения элементов при ширине экрана до 768px */
+        flex-direction: column;
+        /* Выравнивание элементов по центру при изменении направления */
+        align-items: center;
+    }
+
+    .container {
+        gap: 30px;
+    }
+}
