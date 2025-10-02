@@ -1,0 +1,127 @@
+.grid_container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    min-height: 100vh;
+}
+
+.header_list {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.header_links {
+    display: block;
+    padding: 10px;
+    color: lightcoral;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: lavenderblush;
+    border-radius: 10px;
+    min-width: 50px;
+    transition: all 0.5s;
+}
+
+.header_links:hover {
+    transform: scale(1.1) translateX(-5px);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;
+    background-color: rosybrown;
+}
+
+.aside {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aside_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 20px;
+}
+
+.aside_menu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: lightcoral;
+}
+
+.aside_menu a:hover {
+    color: #944e4e;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    background-color: seashell;
+    color: brown;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    grid-column: span 2;
+    background-color: rosybrown;
+}
+
+.footer section {
+    background-color: ivory;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 50px;
+    text-align: center;
+    color: lightcoral;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .grid_container {
+        grid-template-columns: 100px 1fr;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .aside_menu a {
+        font-size: 30px;
+
+    }
+
+    .header_links {
+        font-size: 30px;
+    }
+
+    .footer section {
+        font-size: 30px;
+    }
+}
