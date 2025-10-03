@@ -1,0 +1,6 @@
+ /* TODO 2: пропишите стиль для выравнивания по центру экрана */
+ .container {
+     display: flex;
+     justify-content: center;
+     padding-top: 35vh;
+ }
