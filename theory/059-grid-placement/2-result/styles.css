@@ -1,0 +1,34 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    height: 97vh;
+    background-color: slategrey;
+}
+
+.item {
+    background-color: rgb(159, 142, 123);
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teacher {
+    grid-column: 1 / 3;
+    background-color: #ddc5c5;
+    order: 0;
+}
+
+.programmer {
+    grid-row: span 2;
+    background-color: blue;
+    order: 1;
+}
+
+.scientist {
+    background-color: #d4b273;
+    grid-column: 1/3;
+    order: 2;
+}

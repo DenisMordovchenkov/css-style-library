@@ -5,53 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-            margin: 0;
-            height: 100vh;
-        }
 
-        .grid-container {
-            display: grid;
-            height: 230px;
-            width: 290px;
-            grid-template-columns: repeat(5, 50px);
-            grid-template-rows: repeat(4, 50px);
-            gap: 10px;
-            row-gap: 10px;
-            column-gap: 10px;
-            background-color: #ccc;
-            border: 1px solid #000;
-        }
-
-        .grid-item {
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 30px;
-        }
-
-        .black-item {
-            grid-column: span 2;
-            background-color: black;
-            color: white;
-            order: 0;
-        }
-
-        .red-item {
-            grid-row: span 2;
-            background-color: red;
-        }
-
-        .blue-item {
-            background-color: blue;
-        }
-    </style>
 </head>
 
 <body>
